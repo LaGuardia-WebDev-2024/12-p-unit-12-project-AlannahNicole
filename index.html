@@ -1,14 +1,14 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ y ] $() Select by Element, ID AND Class 
+[ y ] Use Three Different jQuery Methods 
+[ y ] Add Five CSS Declarations
+[ y ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
-[ no ] Feature 3 - Use .mouseover() method
+[ yes ] Feature 3 - Use .mouseover() method
 [ no ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
@@ -28,34 +28,87 @@ Select ONE Additional
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">Celebration of another year </h3>
+        <p>Celebrating another year is the start of a new chapter. I take a new chapter as a new beginning. Turning a year older makes me continuolsy remember to value life. </p>
+        <p id="gr">
+          Greatful to see another year of life
+        </p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2">Awarded one of the "YoungArts Winners"</h3>
+        <p>Being awarded the title as 2025 YoungArts Winner in Modern/Contemporary Dance has been a major highlight of my year. To have this feeling where your art form is being recognized is wholesome.I am grateful to have been supported ny many individuals. </p>
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3">Senior Year</h3>
+        <p class="sh" >
+          Closing of this chapter, Soon to be onto the next
+        </p>
+        <p>As my last year of highschool is coming to an end it's important to create core memories with the people that have made an impact within your highschool years. I cherish Senior year as its my last chapter of highschool. With one month left I hope to continue to make memories with the people I choose to surrond myself by. As well as hope we cross paths in the future. I am ready to close this book and move onto the next chapter of my life. </p>
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+    
+  <script>
+    
+       $("h1").mouseover(function () {
+
+        $("h1").css("color", "purple");
+
       });
 
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+
+      $("#gr").mouseover(function () {
+
+        $("#gr").css("color", "purple");
+
+        $("#gr").text("Grateful");
+
       });
 
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+
+//       $(".sh").mouseover(function () {
+
+//         $(".sh").css("color", "purple");
+        
+        $(".sh").mouseover(function () {
+
+        $(".sh").css("color", "purple");
+
+        $(".sh").html("Closing <strong> of </strong> this chapter");
+
       });
+
+    </script>
+
+
+    <img
+
+      src="https://ih1.redbubble.net/image.2525901178.9960/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+
+    />
+
+
+    <img
+
+      src="https://cdn.glitch.global/e30b26a1-21e6-4394-86f5-e2630f628344/IMG_0326.jpeg?v=1746238043570"
+
+    />
+
+    <img
+
+      src="https://i.pinimg.com/1200x/25/dc/38/25dc38b7d7b906c216392d88d19422c0.jpg"
+
+    />
+
+
+  </body>
+
+</html>
+
+    
     </script>
   </body>
 </html>
